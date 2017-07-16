@@ -1,0 +1,46 @@
+$ribbon-orange: #f7a22b;
+$ribbon-orangered: #d84f24;
+$ribbon-red: #87191a;
+$ribbon-indigo: #6c427e;
+$ribbon-purple: #4a1b57;
+$ribbon-blue: #4a68a4;
+$ribbon-green: #004d26;
+$ribbon-teal: #0d706b;
+$ribbon-lime: #88be42;
+
+$brand-white: #FEFEFE;
+$brand-blue: #012B65;
+$brand-green: #88BD40;
+
+$darkgrey: #222;
+$grey: #666;
+$lightgrey: #999;
+$verylightgrey: #DDD;
+$bodyBG: #FFF;
+
+$serif: 'museo';
+$slabserif: 'museo slab', serif;
+$sanserif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$global-font-size:    16px !default;
+$global-line-height:  25px !default;
+
+$unit: 1.5625em;
+$unitpx: 1.5625px;
+
+$container: 1300px;
+$entryContainer: 45em;
+
+// layout mq
+$mq-fulllayout: $container+100px;
+
+// type mq
+$mq-120font: 60em;
+
+//header mq 
+$mq-showMastHeadCap: 30em;
+$mq-showMastHeadNavigationSmall: 33em;
+$mq-showMastHeadNavigationFull: 40em;
+$mq-showMastHeadFull: 50em;
+
+$mq-fullheader: 50em;

@@ -1,0 +1,22 @@
+.c-contact {
+    background: $ribbon-orange;
+    border-top: 8px solid $brand-white;
+    padding: $unit;
+    text-align: center;
+
+    &__title {
+        @include font-size(24px);
+        max-width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__form {
+        max-width: 45em; 
+        margin: 0 auto;
+        margin-bottom: $unit;
+    }
+    &__fineprint {
+        @include font-size(12px);
+        margin-bottom: 0;
+    }
+}

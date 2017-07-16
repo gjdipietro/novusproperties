@@ -1,0 +1,51 @@
+.c-grid3 {
+    &__item {
+        background: $brand-white;
+        padding: $unit;
+        box-shadow: 0 0 0 1px rgba(0,0,0, .15);
+        margin: $unit/4 0;
+        color: #FFF;
+        &:nth-child(1n) {
+            background: $ribbon-purple;
+        }
+        &:nth-child(2n) {
+            background: $ribbon-blue;
+        }
+        &:nth-child(3n) {
+            background: $ribbon-green;
+        }
+    }
+    &__title {
+        @include font-size(16px);
+        text-align: center;
+        margin-bottom: $unit/2;
+        font-weight: 700;
+    }
+    &__subtitle {
+        @include font-size(14px);
+        margin-top: ($unit/2)*-1;
+        text-align: center;
+        margin-bottom: $unit;     
+    }
+    &__copy {
+        @include font-size(15px);
+        margin-bottom: 0;
+        text-align: center;
+    }
+    &--centered {
+        text-align: center;
+    }
+    @media screen and (min-width:45em) { 
+        @include clearfix();
+        display: flex;
+        align-items: stretch;
+        &__item {
+            border-radius: 3px;
+            width: 31.3333%;
+            margin: 0 1%;
+            float: left;
+        }
+    }
+}
+
+

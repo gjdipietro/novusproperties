@@ -1,0 +1,29 @@
+.c-globalFooter {
+    background: $brand-blue;
+    color: $brand-white;
+    padding: $unit;
+    margin: 0;
+}
+.c-globalFooter-copyright {
+    @include font-size(14px);
+    margin-bottom: $unit;
+    text-align: center;
+}
+
+.c-menu-social {
+    text-align: center;
+    padding: 0;
+    a {
+        display: inline-block;
+        margin: 0 $unit/2 0 0;
+        height: 1em;
+        width: 1em;
+        &:hover {
+            opacity: .7;
+            text-decoration: none;
+        }
+    }
+    svg {
+        fill: $brand-white;
+    }
+}

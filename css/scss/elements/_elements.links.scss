@@ -1,0 +1,10 @@
+a, a:visited, a:active {
+    color: $brand-blue;
+    text-decoration: none;;
+}
+
+a:hover {
+    color: darken($brand-green, 15%);
+    text-decoration: underline;
+    transition: color 0.3s ease-in;
+}

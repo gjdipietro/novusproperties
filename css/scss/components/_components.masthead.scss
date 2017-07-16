@@ -1,0 +1,133 @@
+.c-masthead {
+	margin-bottom: 0;
+}
+
+	//==========================================================================================
+	// THE LOGO BAR //height: $unit*6;  //lets keep around 175
+	// ==========================================================================================
+	.c-masthead__main {
+		@include clearfix();
+		padding: $unit 0;
+		position: relative;
+		&__logo {
+			font-size: 0;
+			float: left; 
+			line-height: 0;
+			margin: 0;
+			width: 50%;
+			&__image {
+				display: inline-block;
+				max-width: 100%;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&__business {
+			display: none;
+		}
+		@media screen and (min-width: $mq-showMastHeadNavigationSmall) {
+			padding: $unit*1.5 0;
+			&__logo {
+				width: 35%;
+			}
+		}
+		@media screen and (min-width: $mq-showMastHeadNavigationFull) {
+			&__logo {
+				width: 30%;
+			}
+			&__logo__image {
+				max-width: 300px;
+			}
+			&__business {
+				float: right;
+				display: block;
+			}
+		}
+	}
+
+
+
+	//==========================================================================================
+	// THE NAVIGATION //height: $unit*3; //lets keep around 50
+	// ==========================================================================================
+	.c-masthead__nav {
+		@include clearfix();
+		background-color: $brand-blue;
+		border-bottom: 3px solid $brand-green;
+		margin: 0; 
+		padding: 0;
+		&__menu {
+			display: none;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			> .menu-item  a {
+				@include font-size(14px);
+				border-bottom: 1px solid #135094;
+				color: #FFF;
+				display: block;
+				line-height: 1;
+				padding: $unit 0;
+				text-decoration: none;
+			}
+		}
+		&__toggle {
+			display: block;
+			width: 100%;
+		}
+		&--visible {
+			.c-masthead__nav__menu {
+				display: block;
+			}
+		}
+		
+		@media screen and (min-width: $mq-showMastHeadNavigationSmall) {
+			&__toggle {
+				display: none;
+			}
+			&__menu {
+				@include clearfix();
+				display: block;
+				> .menu-item {
+					float: left;
+					position: relative;
+					a {
+						display: block;
+						padding: $unit $unit/2;
+						border-bottom: 0;
+						border-left: 1px solid #135094;
+					}
+					&:last-child a {
+						border-right: 1px solid #135094;
+					}
+				}
+			}
+			
+			
+			//active menu items
+			&__menu {
+				> .menu-item > a:hover,
+				> .menu-item.current-menu-item > a {
+					&:before {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						width: 70%;
+						height: .5em;
+						background: $brand-green;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+		@media screen and (min-width: $mq-showMastHeadNavigationFull) { 
+			&__menu > .menu-item a {
+				padding: $unit
+			}
+		}
+
+	}
+		
+		

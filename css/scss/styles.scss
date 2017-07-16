@@ -1,0 +1,49 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+@import "settings/settings.variables";
+@import "settings/settings.fonts";
+
+@import "tools/tools.clearfix";
+@import "tools/tools.hiddenVisually";
+@import "tools/tools.fontsizes";
+
+@import "generic/generic.reset";
+@import "generic/generic.base";
+@import "generic/generic.boxSizing";
+
+@import "elements/elements.type";
+@import "elements/elements.links";
+@import "elements/elements.forms";
+@import "elements/elements.buttons";
+
+@import "objects/objects.container";
+@import "objects/objects.entry";
+@import "objects/objects.inlay";
+
+@import "components/components.banner";
+@import "components/components.business";
+@import "components/components.contactForm";
+@import "components/components.featuredImage";
+@import "components/components.footer";
+@import "components/components.grid3";
+@import "components/components.masthead";
+@import "components/components.profile";
+@import "components/components.ribbon";
+@import "components/components.showMenu";
+
+@import "utilities/utilities.clearfix";
+@import "utilities/utilities.hide";
+@import "utilities/utilities.release";
+
+/* ITCSS 
+/settings: Global variables, site-wide settings, config switches, etc.
+/tools: Site-wide mixins and functions.
+/generic: Low-specificity, far-reaching rulesets (e.g. resets).
+/elements: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+/objects: Objects, abstractions, and design patterns (e.g. .o-layout {}).
+/components: Discrete, complete chunks of UI (e.g. .c-carousel {}). This is the one layer that inuitcss doesn’t provide code for, as this is completely your terrain.
+/utilities: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {}).
+*/

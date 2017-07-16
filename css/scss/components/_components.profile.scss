@@ -1,0 +1,42 @@
+.c-profile {
+	max-width: 60em;
+	margin: 0 auto $unit*2 auto;
+    &__image {
+		margin-bottom: $unit;
+	}
+	&__identity {
+		&__name {
+			display: block;
+		}
+		&__position {
+			@include font-size(14px);
+            display: block;
+			color: $grey;
+		}
+	}
+	
+	@media all and ( min-width: 28em ) {
+		@include clearfix();
+		&__identity {
+			margin-top: 0;
+		}
+		&__image {
+			float: left;
+    		width: auto;
+    		max-width: 27%;
+			margin-bottom: 0
+		}
+		&__content {
+			float: left;
+			margin-left: 3%;
+			width: 70%;
+			max-width: 42em;
+		}
+	}
+	@media all and ( min-width: $mq-fulllayout ) {
+		&__image {
+			min-width: 150px;
+			max-width: 200px;
+		}
+    }
+}

@@ -1,0 +1,61 @@
+.o-entry {
+    &__title {
+        color: $darkgrey;
+        border-bottom: 1px solid #EEE;
+        margin-bottom: $unit;
+        padding: $unit 0;
+        text-align: center;
+        background-repeat: no-repeat;
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+    &__content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $entryContainer;
+        strong {
+            font-weight: bold;
+        }
+        ol, ul {
+            list-style: inherit !important;
+        }
+        ol li, ul li {
+            margin-bottom: $unit/2;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        h2 ~ h2 {
+            margin-top: $unit*2;
+        }
+        img {
+            min-width: 100%;
+        }
+    }
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+.entry-content img,
+.comment-content img,
+.widget img {
+    max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* Make sure images with WordPress-added height and width >attributes are scaled correctly */
+}
+img.size-full {
+    max-width: 97.5%;
+    width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
+}
+
+
+.u-novusbold {
+    color: $ribbon-purple;
+}

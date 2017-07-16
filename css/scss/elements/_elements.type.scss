@@ -1,0 +1,88 @@
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd, p,figure, pre,table,fieldset,hr {
+    margin-top: 0;
+		margin-bottom: $unit;
+}
+
+p {
+  font-size: 1em; /* 16px */
+  line-height: 1.5625em; /* 25px */
+  margin-bottom: 1.5625em; 
+	margin-top: 0;
+}
+
+
+/* 48px - The quick brown fox jumps over the lazy dog */
+.type-48px {
+  font-size: 3.0000em; /* 48px */
+  font-family: $serif;
+  line-height: 1.0417em; /* 50px */
+  margin-bottom: 0.5208em;
+	margin-top: 0;
+
+}
+/* 32px - The quick brown fox jumps over the lazy dog */
+h1, .type-32px {
+  font-size: 2.0000em; /* 32px */
+  font-family: $serif;
+  line-height: 1.5625em; /* 50px */
+  margin-bottom: 0.7813em; 
+	margin-top: 0;
+}
+/* 24px - The quick brown fox jumps over the lazy dog */
+h2, .type-24px {
+  font-size: 1.5000em; /* 24px */
+  font-family: $serif;
+  line-height: 1.0417em; /* 25px */
+  margin-bottom: 1.0417em; 
+	margin-top: 0;
+}
+/* 22px - The quick brown fox jumps over the lazy dog */
+.type-22px {
+  font-size: 1.3750em; /* 22px */
+  font-family: $serif;
+  line-height: 1.1364em; /* 25px */
+  margin-bottom: 1.1364em; 
+	margin-top: 0;
+}
+/* 20px - The quick brown fox jumps over the lazy dog */
+h3, .type-20px {
+  font-size: 1.2500em; /* 20px */
+  font-family: $slabserif;
+  line-height: 1.2500em; /* 25px */
+  margin-bottom: 1.2500em; 
+	margin-top: 0;
+}
+/* 18px - The quick brown fox jumps over the lazy dog */
+.type-18px {
+  font-size: 1.1250em; /* 18px */
+  font-family: $slabserif;
+  line-height: 1.3889em; /* 25px */
+  margin-bottom: 1.3889em;
+	margin-top: 0;
+}
+/* 16px - The quick brown fox jumps over the lazy dog */
+.type-16px {
+  font-size: 1.0000em; /* 16px */
+  font-family: $slabserif;
+  line-height: 1.5625em; /* 25px */
+  margin-bottom: 1.5625em; 
+	margin-top: 0;
+}
+/* 14px - The quick brown fox jumps over the lazy dog */
+.type-14px {
+  font-size: 0.8750em; /* 14px */
+  font-family: $slabserif;
+  line-height: 1.7857em; /* 25px */
+  margin-bottom: 1.7857em;
+	margin-top: 0;
+}
+
+.type-12px {
+  font-size: 0.7500em; /* 12px */
+  line-height: 2.0833em; /* 25px */
+  margin-bottom: 2.0833em;  
+  margin-top: 0.0000em;
+}
+
+

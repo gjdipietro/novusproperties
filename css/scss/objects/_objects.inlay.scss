@@ -1,0 +1,23 @@
+.o-inlay {
+    background: #EEE;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: $unit;
+    margin: $unit*3 0;
+    h2 {
+        text-align: center;
+    }
+    p {
+        max-width: 45em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &--tight {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $mq-fulllayout) {
+        padding: $unit*2;
+    }
+}

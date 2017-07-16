@@ -1,0 +1,7 @@
+.u-hiddenVisually {
+  @include hiddenVisually();
+}
+
+.u-hidden {
+  display: none !important;
+}

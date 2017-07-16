@@ -1,0 +1,12 @@
+html {
+  font-size: 100%;
+  line-height: $unit;
+  font-family: $slabserif;
+  @media (min-width: $mq-120font) {
+    font-size: 120%;
+  }
+}
+body {
+  background: $bodyBG;
+  font-family: $slabserif; 
+}

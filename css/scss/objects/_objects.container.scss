@@ -1,0 +1,11 @@
+.o-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1em;
+
+	@media screen and (min-width: $mq-fulllayout) {
+		width: $container;
+		padding: 0;
+	}
+}
+	

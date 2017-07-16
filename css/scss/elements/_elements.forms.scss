@@ -1,0 +1,9 @@
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    border: 1px solid $lightgrey;
+    background: $brand-white;
+    padding: 1em;
+    &:focus {
+        background: #FFF;
+    }
+}

@@ -1,0 +1,63 @@
+
+ 
+.showMenu {
+  @include font-size(14px);
+  border: 0;
+  background: 0;
+  color: #FFF;;
+  font-weight: 600;
+  padding: $unit/2;
+  &__icon {
+      background: #BABCBE;
+      z-index: 1;
+      vertical-align: middle;
+      display: inline-block;
+      position: relative;
+      height: 4px;
+      width: 25px;
+      border-radius: 10px;
+      -webkit-transition: -webkit-transform 0.3s ease-in;
+      transition: -webkit-transform 0.3s ease-in;
+      transition: transform 0.3s ease-in;
+      transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+      &:before{
+          position: absolute;
+          display: block;
+          top: 6px;
+          content: "";
+          background: #BABCBE;
+          height: 4px;
+          width: 25px;
+          border-radius: 10px;
+          -webkit-transition: -webkit-transform 0.3s ease-in;
+          transition: -webkit-transform 0.3s ease-in;
+          transition: transform 0.3s ease-in;
+          transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+      }
+      &:after {
+          position: absolute;
+          display: block;
+          top: -6px;
+          content: "";
+          background: #BABCBE;
+          height: 4px;
+          width: 25px;
+          border-radius: 10px;
+          -webkit-transition: -webkit-transform 0.3s ease-in;
+          transition: -webkit-transform 0.3s ease-in;
+          transition: transform 0.3s ease-in;
+          transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+      }
+  }
+  &__text {
+    vertical-align: middle;
+    font-size: 1em;
+  }
+  &__wrap {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 2px;
+    margin: 0;
+  }
+}

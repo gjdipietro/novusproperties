@@ -1,0 +1,17 @@
+@font-face {   
+	font-family: 'museo';
+	src: 	url('/novusproperties/wp-content/themes/novus/fonts/Museo700-Regular-webfont.woff2') format('woff2'),
+	url('/novusproperties/wp-content/themes/novus/fonts/Museo700-Regular-webfont.woff') format('woff'),
+	url('/novusproperties/wp-content/themes/novus/fonts/Museo700-Regular-webfont.svg#museo700') format('svg'); 
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {   
+	font-family: 'museo slab';
+	src: url('/novusproperties/wp-content/themes/novus/fonts/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+	url('/novusproperties/wp-content/themes/novus/fonts/Museo_Slab_500_2-webfont.woff') format('woff'),
+	url('/novusproperties/wp-content/themes/novus/fonts/Museo_Slab_500_2-webfont.svg#museoslab500') format('svg'); 
+	font-weight: 500;
+	font-style: normal;
+}
